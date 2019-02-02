@@ -1,0 +1,15 @@
+// подключаем наши внешние зависимости
+
+
+// подключаем наши глобальные настройки
+
+@import 'global/fonts.scss';
+@import 'global/vars';
+@import 'global/base';
+@import 'global/common';
+@import 'global/mixins';
+
+// подключаем стили для секций
+
+@import 'sections/header.scss';
+@import 'sections/footer.scss';
