@@ -1,6 +1,8 @@
 // подключаем наши внешние зависимости
-
-
+@import '../../node_modules/font-awesome/scss/font-awesome.scss';
+@import '../../node_modules/normalize.scss/normalize.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 // подключаем наши глобальные настройки
 
 @import 'global/fonts.scss';
