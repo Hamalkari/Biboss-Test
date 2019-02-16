@@ -48,7 +48,6 @@ gulp.task('css:build', function () {
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
-        .pipe(gulp.dest('build/css/'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS()) // минимизируем CSS
         .pipe(sourcemaps.write('./')) // записываем sourcemap
@@ -64,7 +63,6 @@ gulp.task('js:build', function () {
         })) // получим файл main.js
         .pipe(plumber())
         .pipe(rigger()) // для отслеживания ошибок
-        .pipe(gulp.dest('build/js/'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.init()) //инициализируем sourcemap
         .pipe(uglify()) // минимизируем js
