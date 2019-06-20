@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"><a class="header__logo" href="/"><img class="header__img" src="images/logo.png" alt="Логотип"></a></div>
+      </header>
+      <main class="content">
+        <section class="content">
+          <div class="container">
+            <div class="content-wrap">
+              <div class="content__banner">
+                <h2 class="content__title">Поставь ссылку на БИБОСС</h2>
+                <h3 class="content__subtitle">Заработай баллы!</h3>
+                <div class="content__promo promo">
+                  <div class="promo__pic"><img class="promo__img" src="images/macbook.png" alt="Макбук"></div><a class="promo__link" href="#">Франшиза Dunkin’ Donuts на БИБОСС</a>
+                </div>
+              </div>
+              <div class="content-container">
+                <div class="content__opportunities opportunities">
+                  <p class="opportunities__text">БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из ссылок:</p>
+                  <ul class="opportunities__list"> 
+                    <li class="opportunities__item">Текстовая ссылка «Франшиза <span>[Название</span>] на БИБОСС»</li>
+                    <li class="opportunities__item">Текстовая ссылка «Наша франшиза на БИБОСС»</li>
+                    <li class="opportunities__item">Кнопка “Нравится франшиза” + счетчик популярности</li>
+                  </ul>
+                </div>
+                <div class="content__balls balls">
+                  <div class="balls__question">Зачем нужны <span>баллы</span>?</div>
+                  <div class="balls__answer">Больше баллов — выше позиция в выдаче категории</div>
+                </div>
+                <div class="content__aside aside">
+                  <div class="aside__rules rules">
+                    <h2 class="heading rules__heading">Правила размещения ссылки</h2>
+                    <ul class="rules__list"> 
+                      <li class="rules__item">Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt;)</li>
+                      <li class="rules__item">Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта,</li>
+                      <li class="rules__item">Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу,</li>
+                      <li class="rules__item">При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</li>
+                    </ul>
+                  </div>
+                  <div class="aside__pricelist pricelist">
+                    <h2 class="heading pricelist__heading">Стоимость ссылки</h2>
+                    <ul class="pricelist__list">
+                      <li class="pricelist__item"> 
+                        <h3 class="pricelist__price">200 баллов</h3>
+                        <div class="pricelist__addition">ТиЦ Вашего сайта от 10</div>
+                      </li>
+                      <li class="pricelist__item"> 
+                        <h3 class="pricelist__price">50 баллов</h3>
+                        <div class="pricelist__addition">ТиЦ Вашего сайта от 0 до 10</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="content__mailing mailing">
+                  <h3 class="mailing__title">Получить ссылку</h3>
+                  <form class="form" id="form">
+                    <div class="form__field">
+                      <label class="form__label" for="name">Ваше имя</label>
+                      <input class="form__input" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="form__field">
+                      <label class="form__label" for="telephone">Номер телефона</label>
+                      <input class="form__input" type="tel" id="telephone" name="telephone" placeholder="Для начисления баллов и связи с Вами">
+                    </div>
+                    <div class="form__field">
+                      <label class="form__label" for="franchise">Название франшизы</label>
+                      <input class="form__input" type="text" id="franchise" name="franchise-name" placeholder="Например, Subway" autocomplete="off">
+                      <ul class="autocomplete hide"></ul>
+                    </div>
+                    <button class="form__btn form__btn--disabled" type="submit" id="btn" disabled>Получить ссылку</button>
+                  </form>
+                </div>
+                <p class="content__addition"><b>Это еще не все...</b> Вы можете заработать дополнительные баллы, если разместите на своём сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container"><a class="footer__logo" href="/"><img class="footer__img" src="images/footer-logo.png" alt="Логотип"></a></div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

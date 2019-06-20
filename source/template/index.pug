@@ -7,15 +7,14 @@ html(lang="ru-RU")
 		meta(http-equiv='X-UA-Compatible', content="IE = edge")
 		<![endif]-->
 		meta(name="viewport" content="width=device-width,initial-scale=1")
-		meta(name="keywords" content="")
 		link(rel="stylesheet" type='text/css' href="css/main.min.css")
-
 		<!--[if lt IE 9]>
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
 		<![endif]-->
 	body
 		.wrapper
 			include sections/header
-			.content
+			main.content
+				include sections/content
 			include sections/footer
 		script(src="js/main.min.js")

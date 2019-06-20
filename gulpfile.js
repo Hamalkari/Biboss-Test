@@ -58,15 +58,13 @@ gulp.task('css:build', function () {
 
 gulp.task('js:build', function () {
     return gulp.src('source/js/main.js')
-        .pipe(babel({
-          presets: ['@babel/env']
-        })) // получим файл main.js
+        .pipe(rigger())
         .pipe(plumber())
-        .pipe(rigger()) // для отслеживания ошибок
+        .pipe(babel({
+            presets: ['@babel/env']
+        })) // получим файл main.js
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.init()) //инициализируем sourcemap
-        .pipe(uglify()) // минимизируем js
-        .pipe(sourcemaps.write('./')) //  записываем sourcemap
+        .pipe(uglify())
         .pipe(gulp.dest('build/js/')) // положим готовый файл
         .pipe(webserver.reload({ stream: true })); // перезагрузим сервер
 });

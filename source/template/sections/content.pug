@@ -1,0 +1,52 @@
+section.content
+  .container
+    .content-wrap
+      .content__banner
+        h2.content__title Поставь ссылку на БИБОСС
+        h3.content__subtitle Заработай баллы!
+        .content__promo.promo
+          .promo__pic
+            img(src="images/macbook.png", alt="Макбук").promo__img
+          a.promo__link(href="#") Франшиза Dunkin’ Donuts на БИБОСС
+      .content-container
+        .content__opportunities.opportunities
+          p.opportunities__text БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из ссылок:
+          ul.opportunities__list 
+            li.opportunities__item Текстовая ссылка «Франшиза #[span [Название]] на БИБОСС»
+            li.opportunities__item Текстовая ссылка «Наша франшиза на БИБОСС»
+            li.opportunities__item Кнопка “Нравится франшиза” + счетчик популярности
+        .content__balls.balls
+          .balls__question Зачем нужны #[span баллы]?
+          .balls__answer Больше баллов — выше позиция в выдаче категории
+        .content__aside.aside
+          .aside__rules.rules
+            h2.heading.rules__heading Правила размещения ссылки
+            ul.rules__list 
+              li.rules__item=`Ссылка должна быть индексируемой (без тегов <noindex> и <nofollow>)`
+              li.rules__item Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта,
+              li.rules__item Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу,
+              li.rules__item При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.
+          .aside__pricelist.pricelist
+            h2.heading.pricelist__heading Стоимость ссылки
+            ul.pricelist__list
+              li.pricelist__item 
+                h3.pricelist__price 200 баллов
+                .pricelist__addition ТиЦ Вашего сайта от 10
+              li.pricelist__item 
+                h3.pricelist__price 50 баллов
+                .pricelist__addition ТиЦ Вашего сайта от 0 до 10
+        .content__mailing.mailing
+          h3.mailing__title Получить ссылку
+          form.form(id="form")
+            .form__field
+              label(for="name").form__label Ваше имя
+              input(type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста").form__input 
+            .form__field
+              label(for="telephone").form__label Номер телефона
+              input(type="tel" id="telephone" name="telephone" placeholder="Для начисления баллов и связи с Вами").form__input 
+            .form__field
+              label(for="franchise").form__label Название франшизы
+              input(type="text" id="franchise" name="franchise-name" placeholder="Например, Subway" autocomplete="off").form__input
+              ul.autocomplete.hide
+            button(type="submit" id="btn" disabled).form__btn.form__btn--disabled Получить ссылку
+        p.content__addition #[b Это еще не все...] Вы можете заработать дополнительные баллы, если разместите на своём сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!
